@@ -1,0 +1,6 @@
+chromadb
+openai
+transformers
+sentence_transformers
+flask
+flask-cors

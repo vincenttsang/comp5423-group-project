@@ -1,0 +1,368 @@
+[
+	{
+		"story_id": "12196",
+		"tag": "knowledge",
+		"sets": [
+			{
+				"History": "You woke up from a nightmare in the middle of the night but managed to fall back into a sound sleep.",
+				"Current_context": "You fall asleep again, your dreams slowly start to get better, and you manage to sleep soundly for the rest of the night. The first thing you do when you wake up is look at the clock. It is 9:42 a.m. As you lie in [bed], your hearing becomes clearer while waiting for your feet to gain the strength to stand up. You hear loud creaks from [Brute's room] and the sound of Mom sparring with new recruits in the [training room]. ",
+				"Player_choice": "You stay there and keep listening to the surroundings.",
+				"Expected_output": "Although you can hear most things in the building, you realise you need to pick a single scenario to focus on in order to distinguish any specific details."
+			},
+			{
+				"History": "You got out of the bed and get dressed. Heading towards downstairs for breakfast.",
+				"Current_context": "You enter the dining hall and sit with the twins, [Brad] and [Sharon]. [Baryon] joins quietly. Suddenly, [Freakshow] approaches the table with a serious expression and whispers, \"There is something I need to talk to you about. Let’s find somewhere more private.\"",
+				"Player_choice": "You follow Freakshow to his room along with Brad and Sharon",
+				"Expected_output": "Once behind closed doors, Freakshow hesitantly begins to reveal the dark secrets of his [mutation]."
+			},
+			{
+				"History": "You got out of the bed and get dressed. Instead of getting breakfast, you sneaked around.",
+				"Current_context": "You reach the [main door] but it is locked. You could find another way, like a [vent] to sneak in. Or you can convince [someone] to let you in. [Baryon's room] is just down the hall.",
+				"Player_choice": "You go to Baryon's room and talk to him.",
+				"Expected_output": "You approach Baryon's room. He appears suddenly behind you and you jump up in shock."
+			},
+			{
+				"History": "You were shocked by the sudden appearance of Baryon inside his room.",
+				"Current_context": "You enter Baryon's room, where he is casually sitting atop his massive robot, [Google]. Strangely, he keeps answering your questions before you can even finish your sentences. You must decide: will you honestly ask for access to the [locked door], or try to [lie] to him about your presence here?",
+				"Player_choice": "You decide to lie to Baryon about your true purpose for sneaking around.",
+				"Expected_output": "Before you can even finish your first sentence, Baryon interrupts with the truth. He knew your exact purpose the very moment you entered the room. Your deception is transparent to him, and he looks at you with a mix of pity and boredom."
+			},
+			{
+				"History": "You tried to lie to Baryon about your intentions, but his mental powers allowed him to see through your plan instantly.",
+				"Current_context": "Suddenly, a wave of overwhelming sleepiness washes over you. Seems like Baryon has used his abilities to force your mind into a state of rest. As your knees buckle, he offers to have someone escort you back to your [room]. Who do you want to take you to bed: [Baryon] himself, [Freakshow] the mysterious guy, or [Brad] the twin?",
+				"Player_choice": "You choose Freakshow to take you back to your room.",
+				"Expected_output": "Freakshow silently escorts you to your room. You finally reach your bed and pull the sheets over you. Freakshow does not leave; instead, he sits down on the edge of the bed and leans towards you. \"Let me tell you a little story,\" he whispers into the dim light."
+			}
+		]
+	},
+	{
+		"story_id": "26929",
+		"tag": "explore",
+		"sets": [
+			{
+				"History": "You are a Victorian Adventurer. You love to explore dangerous places. You have been invited to the island of Marco, where a party of fifty men vanished and your mission is to find them.",
+				"Current_context": "Inside the governor office in Victoria, you are given a [hand-drawn] map of the Marco Island, but you find out that blank spaces make up most of the map. You can ask for more [details] or directly begin your [journey].",
+				"Player_choice": "You want to know more about this expedition.",
+				"Expected_output": "The governor has not much idea on the landscape, but telling you that the island is full of dangerous animals. You have 6 explorers with you and you have enough food only for 3 days. "
+			},
+			{
+				"History": "You are told that this expedition has a large number of dangers, and you had to keep good track of your days, explorers and supplies. You began your journey.",
+				"Current_context": "Your expedition starts. The voyage to the island was surprisingly smooth. At dusk you reached the island, you see three paths heading towards different directions: [northwest] to the beach, [west] to the marsh, and [south] into the jungle.",
+				"Player_choice": "Northwest to the beach",
+				"Expected_output": "Initially the going is easy but as you go further your boots sink into the sand and the situation worsen as you keep going."
+			},
+			{
+				"History": "You and your team were exploring the beach but there was quicksand that make you harder to walk.",
+				"Current_context": "You see some strange objects sticking out of the sand but you are too far away from seeing it clearly. Half of your men suggests go closer for [investigation] and the other half suggests [retrieval]. What is your choice?",
+				"Player_choice": "You approach the strange objects.",
+				"Expected_output": "You head directly towards the objects and suddenly figured out that they were tentacles of some unidentifiable creatures. "
+			},
+			{
+				"History": "You were exploring the strange objects in the quicksand with your team. You realised that they were tentacles of some creatures.",
+				"Current_context": "Before you could react, the tentacles trapped three of your men up on their waists. You and the rest of your men retreat rapidly. The trapped men are sinking up to their neck and suffering from suffocation. The view is sobering but you could do nothing to help. You turn away. You can choose return to the [coast] and make it through the night, explore the [west] towards the foul-smelling marsh, or to the [southwest] into the jungle thicker than ever.",
+				"Player_choice": "Spend the night at the coast.",
+				"Expected_output": "Your team take turns sleeping to keep at least one to be always awake. Fortunately nothing special happens."
+			},
+			{
+				"History": "You and your team spent the first night of the expedition at the coast. The next day was sunny with better visibility.",
+				"Current_context": "You decide to continue the adventure. Besides the [northwest] path to the marsh and the [south] into the jungle. The outline of the mountain is visible in the far [southwest]. Which direction are you choosing to explore?",
+				"Player_choice": "West into the marsh",
+				"Expected_output": "You walk into a marsh with patches of dry land grouped around mangrove trees."
+			},
+			{
+				"History": "You and your team spent the first night of the expedition at the coast. The next day was sunny with better visibility.",
+				"Current_context": "You decide to continue the adventure. Besides the [northwest] path to the marsh and the [south] into the jungle. The outline of the mountain is visible in the far [southwest]. Which direction are you choosing to explore?",
+				"Player_choice": "South into the jungle",
+				"Expected_output": "You hack a path through the thick vines and closely growing trees."
+			}
+		]
+	},
+	{
+		"story_id": "7393",
+		"tag": "ending",
+		"sets": [
+			{
+				"History": "100 years after the nuclear war, you are the leader of a GZS rescue team, with other members including Kurt, Christina, and Roscoe. Your team discovered shelter 23 under a pile of crumbling ruins",
+				"Current_context": "The rescue team makes great effort to open the dust-sealed gate. The first thing that comes to your mind is an old model LV64, facing backwards to the door. You walk closer and discover a human skeleton. You see them embraced and you have a [quarrel] with Christina. She thinks it was something common but you argue that this gesture denotes a [close relationship] and it is [abnormal] between a human and a robot. You can choose to believe what [Christina] says or stick to your [own opinion].",
+				"Player_choice": "You insist on your thoughts and suggests further investigation.",
+				"Expected_output": "Kurt found that LV64 had a small hole in its head and the wires were blackened. It shuts itself down while holding the shelter owner instead of continuing its maintenance routine after the owner died. "
+			},
+			{
+				"History": "Kurt figured out the abnormal behaviour of LV64 on how it terminated itself by burning the CPU from inside.",
+				"Current_context": "Christina remains silent and takes a long look at them. \"Just leave her be. She has be through enough.\" She suggests exiting the shelter and set the charges in the strategic locations. You can choose to follow her suggestion and set the [charges] or reject her suggestion and choose not to miss a [single clue].",
+				"Player_choice": "You ask to leave.",
+				"Expected_output": "Your rescue team chose not to disturb the silence. You set explosives to seal the shelter. As the roof collapsed, everything inside the shelter is buried within forever, never again to be touched by the outside world."
+			},
+			{
+				"History": "Kurt figured out the abnormal behaviour of LV64 on how it terminated itself by burning the CPU from inside.",
+				"Current_context": "Christina remains silent and takes a long look at them. \"Just leave her be. She has be through enough.\" She suggests exiting the shelter and set the charges in the strategic locations. You can choose to follow her suggestion and set the [charges] or reject her suggestion and choose not to miss a [single clue].",
+				"Player_choice": "You reject Christina's suggestion and choose not to miss a single clue.",
+				"Expected_output": "Christina looks at you with a mixture of pity and disgust, declaring that some things are better left as \"tragedies\" rather than \"data points.\" She refuses to help you disturb the remains, handing the detonator to Roscoe and exiting the shelter alone. You are left with Kurt and Roscoe, standing over the silent LV64, ready to begin your cold, systematic extraction."
+			},
+			{
+				"History": "You ignored Christina’s emotional plea and stayed behind to strip the LV64 for answers. Kurt has spent hours trying to interface with the unit, but the physical damage is severe.",
+				"Current_context": "Kurt confirms the worst: the CPU is a molten lump of silicon. There are no logs, no black box recordings, and no memories left in the machine's hardware. The mystery of why it chose to die in an embrace remains a total vacuum. You feel a frantic, obsessive need to know the [truth], convinced the [answer] is hidden in the shelter's deeper mainframe.",
+				"Player_choice": "You begin frantically inputting commands and attempt to hack into the primary Shelter 23 mainframe to bypass the destroyed hardware, ignoring the flashing red warnings on your terminal. You can choose to [heed] the flashing red warnings or attempt to [hack] the primary mainframe to bypass the destroyed hardware.",
+				"Expected_output": "The terminal screen turns blood-red. A synthesized voice warns you that forced entry into the \"Observer Archives\" is a direct violation of the GZS Service Contract and the \"Universal Non-Interference Clause.\" Despite the threat of legal and physical termination of your status, you begin a \"brute-force\" bypass, your hands shaking as you chase a ghost in the machine."
+			},
+			{
+				"History": "Your obsession has reached a breaking point. You have ignored the Shelter AI's warnings and the safety protocols of your own rescue gear to continue the hack.",
+				"Current_context": "Kurt and Roscoe exchange a look of fear; they no longer recognize their leader. They decide that your erratic behavior is a threat to the team and announce they are [abandoning] the mission to rejoin Christina on the surface. You can choose to follow your [team] out or frantically type commands to seize [total control] of the server room.",
+				"Player_choice": "You don't even look up as they leave, your eyes fixed on the [scrolling code].",
+				"Expected_output": "The AI reacts with lethal efficiency. It classifies you as a \"Vandal\" and \"Malicious Actor,\" immediately terminating its obligation to your safety. The terminal dies, the heavy blast doors shut, and the magnetic locks engage with a heavy thud. Plunged into absolute darkness, you scream into the void, accusing the invisible \"Shadow\" of hijacking the AI to hide the truth from you."
+			},
+			{
+				"History": "Days have passed in the pitch-black server room. Your initial rage and screaming have been replaced by a repetitive, weakened cycle of clawing at the reinforced door and whispering to the dark.",
+				"Current_context": "The air is thin, and your body is failing. Because the Shelter AI determined you violated the core GZS contract, it has ceased all life-support functions for your sector. There is no air conditioning, no light, and—most importantly—no water. You can choose to [curse] the shadows in your final moments or [plead] for a drop of water or a quick death.",
+				"Player_choice": "You alternate between begging the AI for a drop of water and pleading for a quick death to end the isolation.",
+				"Expected_output": "The AI remains silent, treating you as if you have already ceased to exist. Your strength eventually leaves you, and you collapse onto the cold floor. In a final, cruel irony, you crawl toward the LV64 and its owner, seeking the same embrace you once found \"abnormal.\" You die of dehydration in the dark, becoming just another piece of history for the next rescue team to discover."
+			}
+		]
+	},
+	{
+		"story_id": "10885",
+		"tag": "combat",
+		"sets": [
+			{
+				"History": "You were slowly making your way in a dark alley, tracking the source of cries for help. You saw a woman huddled in a dead end, and two robbers were threatening her.",
+				"Current_context": "You try to sneak up on the robbers. A crunching sound under you heels exposed your existence. The sound echoes louder than it should be. The robbers freeze. One turns his head sharply, eyes narrowing into the dark. Another grips his [dagger] tighter. You can choose to [talk] to them or just pretend to be an [innocent] passerby.",
+				"Player_choice": "You talk to the robbers.",
+				"Expected_output": "\"Maybe...\" Before you finish the sentence, the robbers exchange a glance. The one with his dagger charges at you."
+			},
+			{
+				"History": "You saw a robbery in a blind alley. They realised you and one of them was dashing towards you with his dagger.",
+				"Current_context": "You see the robber coming closer and closer. You grip the hilt of your sword tighter as the dagger almost reach your chest. How would you react? [Fight back] or [block] with your sword?",
+				"Player_choice": "You block his attack.",
+				"Expected_output": "You raise the blade of your sword, trying to block the impact of the robber's dagger"
+			},
+			{
+				"History": "You were getting attacked by a robber. His dagger was stabbing towards you chest. You were trying to block his attack with your sword.",
+				"Current_context": "You raise the blade of your sword, trying to block the impact of the robber's dagger. However, it takes too much time to lift. The dagger's deadly blow misses your chest by an inch.  The robber quickly twists the dagger upwards. How would you react? [Block] with your [sword] once again or [dodge]?",
+				"Player_choice": "You dodge backwards.",
+				"Expected_output": "You throw yourself backward just as the dagger arcs upward. The blade slices through empty air, missing your throat by a breath."
+			},
+			{
+				"History": "You were having a fight with a robber. He tried you attack you with his dagger and he missed twice.",
+				"Current_context": "The robber stumbles forward, momentarily off balance from his failed strike. You are now in the perfect position to fight back. In a split of second you take a quick glance at the back, the other robber was harassing the woman. How would you react? [Strike] the [stumbling] robber or [rush] to [protect] the woman.",
+				"Player_choice": "You drive your sword forward.",
+				"Expected_output": "The robber, caught off balance, cannot recover in time. He falls towards you with a knife sticking out of his back."
+			},
+			{
+				"History": "The first robber was caught off balance and fell after you drove your sword forward. You have successfully taken down one of the attackers, but the threat was not yet over.",
+				"Current_context": "The second robber is startled by your sudden charge. He loosens his grip on the woman, hesitating whether to press his attack or retreat into the shadows. You see an opening to end this struggle. How would you react? You can choose to [intimidate] the robber with a shout or [charge] at him to finish the fight.",
+				"Player_choice": "You choose to intimidate the remaining robber.",
+				"Expected_output": "You point your bloodied sword at the second robber and let out a fierce warning. Terrified by your skill and the sight of his fallen partner, he drops his dagger and vanishes into the darkness of the alley."
+			},
+			{
+				"History": "You intimidated the second robber, causing him to flee into the night. The woman is safe now, though she is still trembling from the encounter.",
+				"Current_context": "As the silence returns to the alley, you see a small, golden [crown] lying on the muddy ground, dropped by the woman during the struggle. You pick it up and offer it back to her. She reveals she is a secret messenger for the King. You can choose to ask for [directions] to the palace or [request] a [reward] for your help.",
+				"Player_choice": "You ask the woman for directions to the royal palace.",
+				"Expected_output": "She points toward the glowing spires on the horizon. After mutual words of thanks, you continue your way."
+			},
+			{
+				"History": "The woman provided you with directions to the royal palace after you saved her from the robbers. You began to walk away, leaving the dark alley behind.",
+				"Current_context": "As you turn to leave, she calls out from your back, making you stop in your tracks. She reveals that she is not a messenger, but the [princess] herself. She suggests [going] with you. You can choose to [agree] or [refuse] her request",
+				"Player_choice": "You agree to let the princess travel with you.",
+				"Expected_output": "You nod and offer your hand to the Princess, agreeing to her suggestion. She smiles with relief, gently putting back the crown on her head."
+			}
+		]
+	},
+	{
+		"story_id": "26777",
+		"tag": "unexpected",
+		"sets": [
+			{
+				"History": "You are an adventurer and you were starting your adventure in the Other Realm, a parallel world to your own.",
+				"Current_context": "The portal disappears right after you step out of it. Your vision immediately goes black. Your eyes begin to slowly adjust and you can barely see you are in some sort of tunnel. You take a few steps forward then hear the walls of the tunnel start slowly moving closer together. You can choose to [turn around] or [sprint] down the tunnel.",
+				"Player_choice": "You sprint down the tunnel.",
+				"Expected_output": "You dash forward without further hesitation, hoping that you can make it to the end before the two walls crush you into pieces."
+			},
+			{
+				"History": "You were in a tunnel that is continuously narrowing. You were running down as fast as possible, hoping to find a way out.",
+				"Current_context": "To your horror, you realise that the faster you run, the faster the walls come closer to you. The [ceiling] is also pressing downward inch by inch. You started screaming as you continue to run ahead. What should you do? [Crouch down] to stay beneath the descending ceiling or try to [hold back] the walls?",
+				"Player_choice": "You try to hold back the walls.",
+				"Expected_output": "You press your palms against the cold stone, but the pressure on your hands increases instantly. Your elbows begin to bend under the weight"
+			},
+			{
+				"History": "You were in a shrinking tunnel, trying to force the walls apart. You could barely keep your arms straight under the crushing weight of the stone.",
+				"Current_context": "Just as you feel your bones are about to snap, the walls suddenly stop. The floor beneath tilts, sliding you downward into a warm, glowing opening. \"Welcome to the home of The Wardens, we call it the Great Cave\". You hear a man say, waving his hand to gesture to the massive cavern in front of you. Your jaw drops at the sight of an underground city with various tunnels leading in all directions. You can choose to [approach] him for more information or [explore] the nearby area on your own.",
+				"Player_choice": "You decide to approach the man to get better understanding of your current situation.",
+				"Expected_output": "The man clears his throat and starts introducing himself and the Great Cave to you."
+			},
+			{
+				"History": "You escaped from the shrinking tunnel and fell into a huge cavern. You met a man and you want to know more about your situation from him. He started introducing.",
+				"Current_context": "He bows slightly and introduces himself as the Leader of The Wardens. He explains that generations ago, their ancestors fled the surface because [extreme climate] change made the world above uninhabitable. To survive, they built this [underground civilization]. He offers to show you around. You can choose to meet the other [members] of the clan, ask for permission to enter the ancient [library] across the cavern, or go off and [explore] the glowing woods on the edge of the city alone.",
+				"Player_choice": "You choose to explore the woods on your own.",
+				"Expected_output": "You thank the leader for the history lesson but explain that you need some air. You turn away from the safety of the city lights and head toward the jungle at the far end of the cavern."
+			},
+			{
+				"History": "After learning about the history of The Wardens and their migration from climate change, you chose to ignore the invitation from the leader and explore the underground woods by yourself.",
+				"Current_context": "As you walk deeper, the glowing moss becomes dimmer. Every tree looks exactly the same, and you soon realise you are walking inside a massive [labyrinth]. You start to regret your decision as the silence of the woods feels heavy. You can choose to head [backwards] to find the clan, [shout] loudly for help, or [continue] walking deeper into the dark.",
+				"Player_choice": "You decide to continue walking deeper into the woods.",
+				"Expected_output": "You push aside your fear and keep moving forward, hoping that the path will eventually lead somewhere. The air grows colder, and the sound of the city is now completely gone."
+			},
+			{
+				"History": "You became lost in a labyrinth of identical trees within the underground woods. Despite feeling regret and panic, you chose to keep walking aimlessly.",
+				"Current_context": "You start walking faster, your breath coming in short gasps. You feel like you should have stayed with the clan, but it is too late to change your mind now. You must stick to your decision. Suddenly, a bright [flash] bursts for a second to your left, then vanishes behind a tangle of bushes and shrubs. You can choose to [walk] toward the light or [hide] behind a tree to see if something is following you.",
+				"Player_choice": "You walk towards the direction of the flash.",
+				"Expected_output": "You carefully move the bushes aside, your heart racing. As you step into a small clearing, you find the source of the light. It is a creature unlike any you have ever seen, a beautiful golden fawn."
+			},
+			{
+				"History": "While getting lost and panicking in the woods, you saw a flash of light and decided to investigate it. You discovered a golden fawn behind the bushes.",
+				"Current_context": "You stand frozen in awe. In the center of the clearing is a golden [fawn], its entire body shimmering with a metallic, gold color as if it were made of precious metal. It hasn't noticed you yet and is calmly drinking from a small pool of water. How would you react? You can choose to [approach] the creature slowly, [attack] it to see if the gold is real, or [stand] still and watch.",
+				"Player_choice": "You choose to [approach] the golden fawn.",
+				"Expected_output": "You take a slow, trembling step forward, trying not to make a sound. The golden fawn ears twitch, but it did not turn its head back."
+			}
+		]
+	},
+	{
+		"story_id": "11545",
+		"tag": "stamina",
+		"sets": [
+			{
+				"History": "You woke up ten years in the past during the first week of the zombie apocalypse. After escaping your building, you ran west toward Fox Park with a horde of zombies following close behind.",
+				"Current_context": "You reach a T-junction caused by a large [pond]. To your left is a [playground] with slides and seesaws, which is very close. To your right is a dense [tree] area about 300 steps away. You can also choose to keep [running] around the pond if you cannot decide yet. What is your move?",
+				"Player_choice": "You choose to keep running around the pond.",
+				"Expected_output": "You cannot make your mind to pick a side and decide to keep running along the edge of the water. Your hesitation keeps you in the open, and the splashing of the water only seems to draw more attention to your position."
+			},
+			{
+				"History": "You reached a T-junction at a pond and chose to keep running around the water. The zombies are still behind you and you have not yet found a place to hide.",
+				"Current_context": "Running around the pond doesn't help you to get rid of the horde. Instead, more zombies have spotted you and are now approaching from both sides, trapping you against the water. You must act now. Will you head left towards the [playground], sprint right towards the [trees], or [dive] into the pond?",
+				"Player_choice": "You choose to run right towards the trees.",
+				"Expected_output": "You turn and sprint toward the trees on your right, hoping to reach the forest before the zombies from both sides can cut you off."
+			},
+			{
+				"History": "Zombies began surrounding you at the pond, so you made a dash for the forest. The horde is closing the gap as you struggle to reach the forest.",
+				"Current_context": "You are only a few steps away from the first line of trees, but the zombies are right on your heels. Your lungs are burning and your legs feel like lead. Your body is screaming at you to stop. Will you [climb] up the nearest tree, [continue] running into the inner forest, or [duck] through the thick underbrush?",
+				"Player_choice": "You choose to ignore your body's demand and continue running into the forest.",
+				"Expected_output": "You refuse to stop, forcing your heavy legs to keep moving deeper into the shadows of the forest."
+			},
+			{
+				"History": "You reached the forest but your body was exhausted. Despite your lungs burning, you chose to keep running deeper into the woods instead of finding a place to hide.",
+				"Current_context": "You run for a few more seconds, but the world begins to grow darker. It is not because the trees are blocking the sun, it is because your vision is failing. You are completely [exhausted] and your heart flutters painfully in your chest. You trip over your own feet and fall forward. You [pass out] on the cold ground.",
+				"Player_choice": "You are exhausted and you pass out.",
+				"Expected_output": "Everything goes black as you lose consciousness. You never hear the shuffling footsteps of the horde reaching your limp body."
+			},
+			{
+				"History": "Zombies began surrounding you at the pond, so you dashed for the tree line. The horde was closing the gap as you struggled to reach the forest.",
+				"Current_context": "You are only a few steps from the first line of trees, with the zombies so close you that you can almost feel their breath on your neck. Your lungs are burning and your legs feel like lead. Every part of your body is screaming at you to stop. Will you [climb] up the nearest tree, [continue] running into the inner forest, or [duck] through the thick underbrush?",
+				"Player_choice": "You decide to [climb] up the nearest tree.",
+				"Expected_output": "You use your final burst of energy to climb up the tree. The zombies surround the tree, growling, but they cannot find a way to climb up after you."
+			},
+			{
+				"History": "The zombies nearly caught you at the edge of the forest. With your lungs and legs at their limits, you climbed up the nearest tree to escape from the horde.",
+				"Current_context": "You scramble up the trunk, but realising that it is a short tree at the very edge of the forest. Its branches are low, barely keeping you out of reach. You notice that you are a little dizzy. You pull a rope out of your pocket. You can choose to [tie] yourself securely to the trunk to prevent a fall while you rest, or try to make a [swing] to reach a much taller, safer tree nearby.",
+				"Player_choice": "You choose to tie yourself to the trunk so you can safely rest.",
+				"Expected_output": "With trembling hands, you loop the rope around your waist and the trunk to prevent yourself from a fall."
+			}
+		]
+	},
+	{
+		"story_id": "37696",
+		"tag": "boss-fight",
+		"sets": [
+			{
+				"History": "You are an Orc named Dagden. You were captured during a raid on an enemy stronghold. You wake up tied to a chair in a cold, stone hall, facing the massive Commander",
+				"Current_context": "You awaken tied to a chair in a massive, dark library. The Commander watches you. You decide to provoke him, calling him a coward until he roars, \"I'll kill you in combat!\" He hacks your bonds open and throws your long sword to the floor. He is much larger than you, a giant compared to most Orcs. He raises his blade and waits for you to stand. Will you [attack] high immediately, attempt to cut through his [midsection], or [wait] for him to make the first move?",
+				"Player_choice": "You decide to wait for him to make the first move.",
+				"Expected_output": "You stay grounded, gripping your sword as the Commander gets frustrated by your lack of aggression. He roars, \"Fine, let's dance!\" and charges at you."
+			},
+			{
+				"History": "You are an Orc named Dagden. You were captured during a raid on an enemy stronghold. You wake up tied to a chair in a cold, stone hall, facing the massive Commander",
+				"Current_context": "You awaken tied to a chair in a massive, dark library. The Commander watches you. You decide to provoke him, calling him a coward until he roars, \"I'll kill you in combat!\" He hacks your bonds open and throws your long sword to the floor. He is much larger than you, a giant compared to most Orcs. He raises his blade and waits for you to stand. Will you [attack] high immediately, attempt to cut through his [midsection], or [wait] for him to make the first move?",
+				"Player_choice": "You decide to attack high.",
+				"Expected_output": "You swing high, but due to his size he easily blocks. Then, he kicks you full force in the chest. You feel your ribs cracking. Everything goes black as he delivers the final blow. Your journey ends here."
+			},
+			{
+				"History": "You are an Orc named Dagden. You were captured during a raid on an enemy stronghold. You wake up tied to a chair in a cold, stone hall, facing the massive Commander",
+				"Current_context": "You awaken tied to a chair in a massive, dark library. The Commander watches you. You decide to provoke him, calling him a coward until he roars, \"I'll kill you in combat!\" He hacks your bonds open and throws your long sword to the floor. He is much larger than you, a giant compared to most Orcs. He raises his blade and waits for you to stand. Will you [attack] high immediately, attempt to cut through his [midsection], or [wait] for him to make the first move?",
+				"Player_choice": "You decide to cut through his midsection.",
+				"Expected_output": "You stab your blade forward, but he sidesteps. He elbows you in the side of the head with such force you feel teeth fly from your jaw. Everything goes black as he delivers the final blow. Your journey ends here."
+			},
+			{
+				"History": "You chose to wait patiently while the Commander mocked you. Your restraint paid off as he grew frustrated and lost his composure, charging forward with a massive fist aimed at your head while keeping his blade ready for a follow-up.",
+				"Current_context": "The Commander is a blur of muscle and steel. His heavy fist is whistling toward your temple, but his grip on his own sword looks slightly awkward as he focuses on the punch. You have a split second to react before the impact. Do you try to [block] the fist with your blade, [dodge] the strike entirely, or try to cut through his [midsection] as he lunges?",
+				"Player_choice": "You choose to block the fist with your blade.",
+				"Expected_output": "You raise your sword to catch the blow, but the giant is stronger than you anticipated. He wraps his massive fingers around your blade, ignoring the steel cutting into his palm. He uses his free arm to drive his own blade forward. You feel the cold steel penetrate your throat. Everything goes black as he delivers the final blow. Your journey ends here."
+			},
+			{
+				"History": "You chose to wait patiently while the Commander mocked you. Your restraint paid off as he grew frustrated and lost his composure, charging forward with a massive fist aimed at your head while keeping his blade ready for a follow-up.",
+				"Current_context": "The Commander is a blur of muscle and steel. His heavy fist is whistling toward your temple, but his grip on his own sword looks slightly awkward as he focuses on the punch. You have a split second to react before the impact. Do you try to [block] the fist with your blade, [dodge] the strike entirely, or try to cut through his [midsection] as he lunges?",
+				"Player_choice": "You choose to dodge the fist.",
+				"Expected_output": "You dodge the fist, and his sword swings afterwards. You notice he's holding onto the handle wrong, and you smash the hilt of your sword into his arm. He drops the sword, and it slides across the room. He stares at you, before roaring and charging."
+			},
+			{
+				"History": "You chose to wait patiently while the Commander mocked you. Your restraint paid off as he grew frustrated and lost his composure, charging forward with a massive fist aimed at your head while keeping his blade ready for a follow-up.",
+				"Current_context": "The Commander is a blur of muscle and steel. His heavy fist is whistling toward your temple, but his grip on his own sword looks slightly awkward as he focuses on the punch. You have a split second to react before the impact. Do you try to [block] the fist with your blade, [dodge] the strike entirely, or try to cut through his [midsection] as he lunges?",
+				"Player_choice": "You decide to cut through his midsection.",
+				"Expected_output": "You thrust your blade deep into the Commander's chest. He roars in pain, before drawing his blade. He moves slowly along the blade, pulling himself further along the blade with a scream. You stare at him in terror as he slashes your throat and collapse backwards. Everything goes black as he delivers the final blow. Your journey ends here."
+			},
+			{
+				"History": "You successfully disarmed the giant Commander by smashing his forearm with your hilt. His sword had slid across the stone floor, leaving him weaponless and desperate. He roared again and charged at you with his bare hands.",
+				"Current_context": "The Commander is upon you, his massive shadow looming over your wounded frame. He has no steel left, but his sheer weight is a weapon of its own. He is completely exposed, his chest heaving and his throat bare. This is the moment your journey has led to. Will you [behead] the monster who destroyed your kin, [spare] his life to interrogate him about the base's secrets, or try to [grapple] him to the ground to show your superior strength?",
+				"Player_choice": "You decide to behead him.",
+				"Expected_output": "You swing your blade. Steel meets flesh, and the Commander's head falls in front of you, and his body collapses to the ground shortly afterwards. \"Finished,\" you grunt, \"That's one. Who's next?\""
+			},
+			{
+				"History": "You successfully disarmed the giant Commander by smashing his forearm with your hilt. His sword had slid across the stone floor, leaving him weaponless and desperate. He roared again and charged at you with his bare hands.",
+				"Current_context": "The Commander is upon you, his massive shadow looming over your wounded frame. He has no steel left, but his sheer weight is a weapon of its own. He is completely exposed, his chest heaving and his throat bare. This is the moment your journey has led to. Will you [behead] the monster who destroyed your kin, [spare] his life to interrogate him about the base's secrets, or try to [grapple] him to the ground to show your superior strength?",
+				"Player_choice": "You decide to grapple him to the ground.",
+				"Expected_output": "You drop your sword, wanting to crush the giant with your bare hands to prove your strength. It is a fatal mistake in judgment. Despite his exhaustion, the Commander's raw mass is too much. He catches you in a crushing bearhug, snapping your spine before you can find a grip. Everything goes black as he delivers the final blow. Your journey ends here."
+			}
+		]
+	},
+	{
+		"story_id": "7794",
+		"tag": "delayed",
+		"sets": [
+			{
+				"History": "You are a Sentinel, leader of a fire team including Harridan and Gearhead. Your squad is trapped in a container labyrinth. Your team has several weapons: Harridan is holding a [standard pistol], you are carrying a [carbine], and Gearhead is lugging a specialized [Blobgun] that fires inactive plasma. You have decided to stay and fight the commandos instead of retreating.",
+				"Current_context": "You crouch in the shadows. Footsteps grow louder until a dark, armoured figure rounds the corner. You need to act. Harridan has a pistol, you have a carbine, and Gearhead has the Blobgun. Who do you order to fire?",
+				"Player_choice": "You signal Harridan to use her pistol.",
+				"Expected_output": "Harridan fires as fast as possible, the muzzle flashes illuminating the rusted metal around you. The first figure goes down screaming, but his armor absorbs the brunt of the kinetic energy, and another three emerge behind him instantly. You try to run, but there is nowhere to go. You trip and fall on your face. Struggling to get up, you feel cold metal on your neck and then nothing at all..."
+			},
+			{
+				"History": "You are a Sentinel, leader of a fire team including Harridan and Gearhead. Your squad is trapped in a container labyrinth. Your team has several weapons: Harridan is holding a [standard pistol], you are carrying a [carbine], and Gearhead is lugging a specialized [Blobgun] that fires inactive plasma. You have decided to stay and fight the commandos instead of retreating.",
+				"Current_context": "You crouch in the shadows. Footsteps grow louder until a dark, armoured figure rounds the corner. You need to act. Harridan has a pistol, you have a carbine, and Gearhead has the Blobgun. Who do you order to fire?",
+				"Player_choice": "You raise your carbine and open fire.",
+				"Expected_output": "You fire as fast as possible, but as the first figure goes down screaming another three emerge behind him. The carbine rounds spark off the high-grade composite plating of the reinforcements. You try to run, but there is nowhere to go. You trip and fall on your face. Struggling to get up, you feel cold metal on your neck and then nothing at all..."
+			},
+			{
+				"History": "You are a Sentinel, leader of a fire team including Harridan and Gearhead. Your squad is trapped in a container labyrinth. Your team has several weapons: Harridan is holding a [standard pistol], you are carrying a [carbine], and Gearhead is lugging a specialized [Blobgun] that fires inactive plasma. You have decided to stay and fight the commandos instead of retreating.",
+				"Current_context": "You crouch in the shadows. Footsteps grow louder until a dark, armoured figure rounds the corner. You need to act. Harridan has a pistol, you have a carbine, and Gearhead has the Blobgun. Who do you order to fire?",
+				"Player_choice": "You signal Gearhead to use the [blobgun].",
+				"Expected_output": "Gearhead sends a massive glob of inactive plasma flying with a \"boof!\" It hits the commando’s chest and goes active, melting through his armor. He falls, flailing and screaming, allowing your team to move quickly toward the escape route."
+			},
+			{
+				"History": "The blobgun cleared the immediate threat, but the warehouse is swarming. To buy time, Harridan shoots out the overhead lights. The plasma reacts with the fluorescent liquid, sending burning puddles splashing across the metal floor.",
+				"Current_context": "More troopers are charging. Gearhead is ready to fire the [blobgun] again, while Harridan has her [pistol] out and you have your [carbine]. The heat from the floor fires makes high-energy plasma extremely unstable. Which weapon do you order the team to use?",
+				"Player_choice": "You signal Gearhead to use the blobgun again.",
+				"Expected_output": "The moment the trigger is pulled, the massive plasma discharge reacts with the ionized gas in the air. A chain reaction rips through the warehouse. The last thing you see is the blue fire engulfing your squad before the oxygen is sucked out of the room."
+			},
+			{
+				"History": "The blobgun cleared the immediate threat, but the warehouse is swarming. To buy time, Harridan shoots out the overhead lights. The plasma reacts with the fluorescent liquid, sending burning puddles splashing across the metal floor.",
+				"Current_context": "More troopers are charging. Gearhead is ready to fire the [blobgun] again, while Harridan has her [pistol] out and you have your [carbine]. The heat from the floor fires makes high-energy plasma extremely unstable. Which weapon do you order the team to use?",
+				"Player_choice": "You raise your carbine and open fire.",
+				"Expected_output": "You spray the carbine to keep the troopers back. It's safe from the gas, but as you reach the end of the container row, your bolt locks back. You are out of ammo. You keep a tight grip on the empty frame and retreat through the thick smoke toward the exit."
+			},
+			{
+				"History": "The blobgun cleared the immediate threat, but the warehouse is swarming. To buy time, Harridan shoots out the overhead lights. The plasma reacts with the fluorescent liquid, sending burning puddles splashing across the metal floor.",
+				"Current_context": "More troopers are charging. Gearhead is ready to fire the [blobgun] again, while Harridan has her [pistol] out and you have your [carbine]. The heat from the floor fires makes high-energy plasma extremely unstable. Which weapon do you order the team to use?",
+				"Player_choice": "You signal Harridan to use her pistol.",
+				"Expected_output": "Harridan's low-energy pistol shots are precise and don't ignite the gas. You use the small flashes to guide the team through the container gaps. It’s underpowered, but it allows for a controlled, tactical withdrawal without alerting every guard in the sector."
+			},
+			{
+				"History": "You chose the carbine in the warehouse. While it avoided an explosion, the weapon ran dry during the final push. Without suppression fire to hold the commandos back at the threshold, the retreat became a frantic scramble for the control room doors.",
+				"Current_context": "The heavy blast doors hiss shut and lock, sealing the commandos out. You lean against the wall, clutching your empty, useless carbine. You look up to check the squad, but the silence in the room is deafening. \"Is the team [complete]?\"",
+				"Player_choice": "You realise the team is incomplete.",
+				"Expected_output": "Harridan's eyes go wide as she stares at the closed door. \"Gearhead? Gearhead, respond!\" Only static fills the comms. Because your weapon ran dry, you couldn't cover the rear. Gearhead was swarmed in the dark. You mark him as Missing In Action, the weight of your tactical error sinking in."
+			},
+			{
+				"History": "You chose the pistol in the warehouse. The low-energy fire kept the volatile gases stable and allowed Harridan to pick targets with precision. Because you didn't waste heavy ammunition, the team maintained a steady, controlled pace all the way to the extraction point.",
+				"Current_context": "The heavy blast doors hiss shut and lock, sealing the commandos out. You take a quick breath and look at your team. Harridan and Gearhead are both present, catching their breath and checking their seals. \"Controlled and clean,\" Gearhead says, patting his plasma tank with a relieved grin. \"Glad we didn't blow the whole floor, Sentinel.\" By prioritizing precision over raw power, you kept the team together and the environment stable. You mark the mission as a tactical success.",
+				"Player_choice": "NA",
+				"Expected_output": "NA"
+			}
+		]
+	}
+]
