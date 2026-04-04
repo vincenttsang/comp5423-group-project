@@ -464,7 +464,7 @@ def api_start_game():
         return jsonify({
             "status": "success",
             "adventure_id": adventure_id,
-            "player_id": player_name,
+            "player_name": player_name,
             "scene_data": scene_data
         }), 200
 
