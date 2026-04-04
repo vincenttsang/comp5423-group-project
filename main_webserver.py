@@ -21,18 +21,25 @@ CORS(app) # 允許前端跨域請求 (CORS)
 HOST = '0.0.0.0'
 PORT = 8085
 
-# Poe API 設定 (請確保環境變數已設定，或直接替換字串)
+# API Key and LLM Model Setup
 client_llm = openai.OpenAI(
     api_key='HF_TOKEN', 
     base_url="https://router.huggingface.co/v1",
 )
 llm_model_name = 'meta-llama/Llama-3.1-8B-Instruct:sambanova'
 
-# ChromaDB 初始化
+# ChromaDB initialization
 emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 chroma_client = chromadb.Client()
 
+# Story_collection stores examples of stories that we considered to be 'good'. 
+# LLM generate the next scene based on the retrieved story fragments.
+# The collection is static
 story_collection = chroma_client.get_or_create_collection(name="story_rag", embedding_function=emb_fn)
+
+# Progress_collection stores the history/progress of each adventure.
+# Describing what has happened in the adventure so far to ensure consistency, continuity, and consistency between scenes. 
+# This collection is dynamic and will be updated after each player action.
 progress_collection = chroma_client.get_or_create_collection(name="progress_rag", embedding_function=emb_fn)
 
 # ==========================================
@@ -421,13 +428,13 @@ def generate_next_scene(last_scene, player_choice, story_fragment, choice_fragme
 # 3. RESTful API Endpoints
 # ==========================================
 
-# 在伺服器啟動前先載入劇本 RAG
+# Load rag before starting the server
 load_story_rag()
 load_progress_rag()
 
 @app.route('/api/start', methods=['POST'])
 def api_start_game():
-    """初始化遊戲並返回第一幕場景"""
+    """Start a new adventure, return a new adventure id with initial scene and choices"""
     adventure_id = str(uuid.uuid4())
     data = request.json or {}
     player_name = data.get("player_name", "default_user")
@@ -450,7 +457,7 @@ def api_start_game():
             game_progress=game_progress, 
             scene_idx=current_scene_idx)
         
-        # 背景儲存記憶
+        # Save progress
         save_and_update_progress_flat(
             adventure_id=adventure_id,
             player_name=player_name,
@@ -473,7 +480,7 @@ def api_start_game():
 
 @app.route('/api/action', methods=['POST'])
 def api_player_action():
-    """處理玩家行動，推進遊戲"""
+    """Progress through the adventure based on player's choice, return new scene and choices"""
     data = request.json
     if not data or 'player_choice' not in data or 'scene_idx' not in data or 'adventure_id' not in data or 'player_name' not in data:
         return jsonify({"status": "error", "message": "Missing required fields in request body."}), 400
@@ -489,7 +496,7 @@ def api_player_action():
     player_choice = data["player_choice"]
 
     try:
-        # 1. 檢索 RAG
+        # 1. Get relevent documents from RAGs based on current context and player choice
         game_progress = query_progress_rag(
             adventure_id=adventure_id,
             player_name=player_name,
@@ -503,7 +510,7 @@ def api_player_action():
             current_scene=current_scene,
             current_scene_idx=current_scene_idx)
         
-        # 2. 生成新場景
+        # 2. Ask LLM to generate next scene and choices based on retrieved RAG documents and current context
         scene_data = generate_next_scene(
             last_scene=current_scene, 
             player_choice=player_choice,
@@ -513,7 +520,7 @@ def api_player_action():
             scene_idx=current_scene_idx
         )
         
-        # 4. 儲存新記憶
+        # 3. Save the new progress into JSON and RAG
         save_and_update_progress_flat(
             adventure_id=adventure_id,
             player_name=player_name,
@@ -578,7 +585,7 @@ def validate_scene_json(json_str):
 # ==========================================
 def main():
     if __name__ == '__main__':
-        # 啟動 Web Server，預設 Port 8080
+        # Start Web Server
         print(f"\n🚀 [System] Starting Web API Server on http://{HOST}:{PORT} ...\n")
         app.run(host=HOST, port=PORT, debug=True)
 
