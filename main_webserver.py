@@ -481,6 +481,9 @@ def api_player_action():
     adventure_id = data["adventure_id"]
     player_name = data.get("player_name", "default_user")
 
+    if check_adventure_ended(adventure_id, player_name):
+        return jsonify({"status": "error", "message": "This adventure has already ended."}), 400
+
     current_scene_idx = data["scene_idx"]
     current_scene = data.get("current_scene", "No previous scene provided.")
     player_choice = data["player_choice"]
@@ -524,7 +527,7 @@ def api_player_action():
         return jsonify({
             "status": "success",
             "adventure_id": adventure_id,
-            "player_id": player_name,
+            "player_name": player_name,
             "scene_data": scene_data
         }), 200
 
