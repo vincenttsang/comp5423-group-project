@@ -10,9 +10,11 @@ from chromadb.utils import embedding_functions
 
 # Poe API 設定
 client_llm = openai.OpenAI(
-    api_key=os.getenv("POE_API_KEY"),
-    base_url="https://api.poe.com/v1",
+    api_key='HF_TOKEN', #os.getenv("POE_API_KEY"),
+    base_url="https://router.huggingface.co/v1",
 )
+
+llm_model_name = 'meta-llama/Llama-3.1-8B-Instruct:sambanova'
 
 # ChromaDB 初始化
 emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
@@ -79,7 +81,7 @@ def summarize_and_store_memory(player_id, scene_text, player_choice):
     """
     
     response = client_llm.chat.completions.create(
-        model="gpt-5-nano",
+        model=llm_model_name,  #"qwen3.5-397b-a17b-t", #gpt-5-nano",
         messages=[{"role": "user", "content": summary_prompt}]
     )
     summary = response.choices[0].message.content
@@ -117,7 +119,7 @@ def generate_next_scene(player_choice, game_state, story_fragment, game_history)
     # NARRATIVE LOGIC
     1. SCRIPT AS TRUTH: The {{story_fragment}} defines the mandatory plot outcome.
     2. DYNAMIC BRIDGING: Use {{player_choice}} to bridge the narrative.
-    3. FORMATTING: Use <color="#hex">key_terms</color> for emphasis.
+    3. FORMATTING: Use <color=\\"#hex\\">key_terms</color> for emphasis.
 
     # INPUT PARAMETERS
     - Story Fragments (RAG 1): {story_fragment}
@@ -125,7 +127,7 @@ def generate_next_scene(player_choice, game_state, story_fragment, game_history)
     - Player's Last Choice: {player_choice}
 
     # RESPONSE FORMAT
-    Return a JSON object ONLY. Do not include markdown code blocks.
+    Return one and only one JSON object ONLY. Do not include markdown code blocks. Do not include any explanation, comments, or text outside of the JSON. The JSON must be valid and parseable.
     {{
       "text": "Your creative narration...",
       "story_arc": {{"current_phase": "...", "description": "..."}},
@@ -138,16 +140,23 @@ def generate_next_scene(player_choice, game_state, story_fragment, game_history)
     # GAME RULES & CONSTRAINTS
     - HP Logic: Player HP is a Double. If hp <= 0, set end_game to true. Modify HP logically based on the combat or event outcome.
     - Fixed Choices: You MUST provide exactly three choices (choice_a, choice_b, choice_c).
+
+    # IMPORTANT REMARK
+    Make sure that the response is a VAlID, Parseable JSON object
     """
 
+    #print(system_prompt)
+
     response = client_llm.chat.completions.create(
-        model="gpt-5-nano",
+        model=llm_model_name, #"qwen3.5-397b-a17b-t", #"gpt-5-nano",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"The player chose: {player_choice}"}
         ],
         response_format={"type": "json_object"}
     )
+
+    #print(response)
     
     return response.choices[0].message.content
 
@@ -174,7 +183,11 @@ def start_game():
         
         # 2. 呼叫 LLM 生成場景
         print("[System] Generating next scene...\n")
-        response_json_str = generate_next_scene(player_choice, game_state, story_fragment, game_history)
+        response_json_str = 'a'
+        trial = 0
+        while is_json(response_json_str) == False:
+            response_json_str=generate_next_scene(player_choice, game_state, story_fragment, game_history)
+            print(f'Receive non json response. Trial: {++trial}')
         
         try:
             # 解析 JSON
@@ -255,6 +268,16 @@ def start_game():
         except Exception as e:
             print(f"[Error] An unexpected error occurred: {e}")
             break
+
+# ==========================================
+# 6. Helper Function
+# ==========================================
+def is_json(my_str):
+    try:
+        json.loads(my_str)
+        return True
+    except (ValueError, json.JSONDecodeError):
+        return False
 
 if __name__ == "__main__":
     start_game()
