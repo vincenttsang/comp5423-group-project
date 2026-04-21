@@ -23,8 +23,8 @@ PORT = 8085
 
 # API Key and LLM Model Setup
 client_llm = openai.OpenAI(
-    api_key='HF_TOKEN', 
-    base_url="https://router.huggingface.co/v1",
+    api_key = os.getenv("HF_TOKEN"), 
+    base_url = "https://router.huggingface.co/v1",
 )
 llm_model_name = 'meta-llama/Llama-3.1-8B-Instruct:sambanova'
 

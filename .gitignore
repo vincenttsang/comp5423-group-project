@@ -192,3 +192,6 @@ ehthumbs.db
 # Linux trash
 .Trash-*
 .nfs*
+
+# VS Code settings
+.vscode/
